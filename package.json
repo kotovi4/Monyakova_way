@@ -1,7 +1,7 @@
 {
-  "name": "Liga-A-start-template",
+  "name": "europe-travel",
   "version": "1.0.0",
-  "description": "Стартовый шаблон сборки Лиги А",
+  "description": "Путешествие по Европе // Грейдирование - HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.5.x",
