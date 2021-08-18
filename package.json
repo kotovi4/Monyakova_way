@@ -1,42 +1,32 @@
 {
-  "name": "europe-travel",
-  "version": "1.0.0",
+  "name": "monyakova_way",
+  "private": true,
   "description": "Путешествие по Европе // Грейдирование - HTML Academy",
   "devDependencies": {
-    "@htmlacademy/editorconfig-cli": "1.x",
-    "autoprefixer": "9.5.x",
-    "browser-sync": "2.26.x",
-    "gulp": "4.0.x",
-    "gulp-csso": "^3.0.1",
-    "gulp-imagemin": "^5.0.3",
-    "gulp-plumber": "1.2.x",
-    "gulp-postcss": "8.0.x",
-    "gulp-posthtml": "^3.0.4",
-    "gulp-rename": "^1.4.0",
-    "gulp-sass": "4.0.x",
-    "gulp-sourcemaps": "2.6.x",
-    "gulp-svgstore": "^7.0.1",
-    "gulp-webp": "^4.0.1",
-    "pixel-glass": "^1.0.13",
-    "posthtml-include": "^1.2.0",
-    "stylelint": "9.10.x",
-    "stylelint-config-htmlacademy": "0.1.x",
-    "eslint": "4.16.0",
-    "eslint-config-htmlacademy": "0.4.x"
+    "@htmlacademy/editorconfig-cli": "1.0.0",
+    "autoprefixer": "^10.2.5",
+    "browser-sync": "^2.26.14",
+    "gulp": "4.0.2",
+    "gulp-plumber": "1.2.1",
+    "gulp-postcss": "9.0.0",
+    "gulp-sass": "^4.1.1",
+    "gulp-sourcemaps": "3.0.0",
+    "postcss": "8.2.8",
+    "sass": "^1.38.0",
+    "stylelint": "13.13.1",
+    "stylelint-config-htmlacademy": "0.1.10"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
-    "test": "npm run editorconfig && npm run stylelint && eslint source/js/",
-    "build": "gulp build",
-    "start": "gulp start",
-    "webp": "gulp webp",
-    "sprite": "gulp sprite"
+    "test": "npm run editorconfig && npm run stylelint",
+    "build": "gulp styles",
+    "start": "gulp"
   },
   "browserslist": [
     "last 2 versions",
-    "IE 11",
-    "Firefox ESR"
+    "not dead",
+    "not ie <= 11"
   ],
   "editorconfig-cli": [
     "*.json",
@@ -44,12 +34,19 @@
     "source/*.html",
     "source/js/**/*.js",
     "source/img/**/*.svg",
-    "source/sass/**/*.{sass,scss}"
+    "source/sass/**/*.scss"
   ],
   "engines": {
-    "node": "8.15"
+    "node": "^12 || ^14"
   },
   "dependencies": {
-    "del": "^4.1.1"
+    "del": "^6.0.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-svgstore": "^8.0.0",
+    "gulp-terser": "^2.0.1",
+    "gulp-webp": "^4.0.1",
+    "postcss-csso": "^5.0.1"
   }
 }
