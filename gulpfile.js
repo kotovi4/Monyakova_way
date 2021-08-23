@@ -47,7 +47,7 @@ const copyStyles = () => {
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'build'
+      baseDir: "build"
     },
     cors: true,
     notify: false,
@@ -112,6 +112,15 @@ const copyImages = () => {
 }
 
 exports.images = copyImages;
+
+// const optimazeSprite = () => {
+//   return gulp.src("build/img/sprite-*.svg")
+//   .pipe(svgstore({inlineSvg: true}))
+//   .pipe(rename("sprite.svg"))
+//   .pipe(gulp.dest("build/img"))
+// }
+
+// exports.images = optimazeSprite;
 
 // WebP
 

@@ -1,26 +1,18 @@
 // //Colors
-// @main-text-color: #283645;
-// @title-text-color: #000000;
-// @accent-color: #d22856;
-// @nav-text-color: #ffffff;
-// @shadow-color: rgba(255, 255, 255, 0.15);
-// @download-bg-color: #1d2631;
-// @features-bg-color: #f2f2f2;
-// @table-line-color: #e5e5e5;
-// @button-color: #2aad6d;
-// @button-color-hover:#1c9b5e;
-// @button-color-active: rgba(255, 255, 255, 0.3);
-// @shadow-page-color: rgba(0, 1, 1, 0.2);
-// @shadow-button-color: rgba(1, 1, 1, 0.75);
-// @page-header-top-bg: rgba(@title-text-color, 0.3);
-// @toggle-button-color: rgba(@main-text-color, 0.3);
-// @social-icon-border-color: rgba(@main-text-color, 0.1);
-// @filter-icon-hover-color: rgba(@main-text-color, 0.5);
-// @slider-bullet-hover-color: rgba(@main-text-color, 0.6);
-// @shadow-popup-color: rgba(0, 1, 1, 0.15);
-// @promo-button-active-color: rgba(@accent-color, 0.3);
+$white: #ffffff;
+$gray: #d7d9df;
+$gray--light: #fdf8f8;
+$gray--dark: #141517;
+$accent: #fe7865;
+$main-text: #2f2f3f;
+$button-active: #f17d4b;
+$nav-text: #48494d;
+$promo-bg: #487698;
+
+// Fonts
+$font-deafult: "Montserrat", "Arial", sans-serif;
 
 //Viewports
-$desktop-width: 1024px;
-$tablet-width: 768px;
-$mobile-width: 320px;
+$mobile-width: 767px;
+$tablet-width: 1023px;
+$desktop-width: 1170px;

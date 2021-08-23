@@ -1,0 +1,32 @@
+.page-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 auto;
+  padding: 37px 30px 31px;
+  max-width: $desktop-width;
+
+  @media (max-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  @media (max-width: $mobile-width) {
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
+
+.page-footer__title {
+  width: 100%;
+  margin-top: 0;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+}

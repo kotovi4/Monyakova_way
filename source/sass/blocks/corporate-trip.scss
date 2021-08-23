@@ -1,0 +1,30 @@
+.corporate-trip {
+  width: 370px;
+  padding-left: 23px;
+  border-left: 1px solid $gray;
+
+  @media (max-width: $tablet-width) {
+    flex-grow: 2;
+    text-align: center;
+    padding-left: 0;
+    border-top: 1px solid $gray;
+    border-left: none;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
+}
+
+.corporate-trip__title {
+  @media (max-width: $tablet-width) {
+    margin-top: 30px;
+  }
+}
+
+.corporate-trip__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 170%;
+  color: transparentize($gray--dark, 0.5);
+}

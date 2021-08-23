@@ -1,0 +1,39 @@
+.next-trips {
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  width: 384px;
+  padding: 0;
+  border-right: 1px solid $gray;
+
+  @media (max-width: $tablet-width) {
+    width: 378px;
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: $mobile-width) {
+    justify-content: center;
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid $gray;
+  }
+}
+
+.next-trips__list {
+  padding: 0;
+  margin-top: 8px;
+  margin-right: 30px;
+  margin-bottom: 10px;
+  list-style: none;
+
+  @media (max-width: $mobile-width) {
+    margin-right: 10px;
+    width: 134px;
+  }
+}
+
+.next-trips__link {
+  font-size: 14px;
+  line-height: 17px;
+  color: transparentize($gray--dark, 0.5);
+}

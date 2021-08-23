@@ -1,0 +1,40 @@
+.contacts {
+  margin-right: 21px;
+  width: 310px;
+  padding: 0 20px;
+
+  @media (max-width: $tablet-width) {
+    width: 300px;
+    margin-right: 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.contacts__item {
+  display: flex;
+  align-items: center;
+  color: $accent;
+  text-decoration: underline;
+
+  @media (max-width: $mobile-width) {
+    justify-content: center;
+  }
+}
+
+.contacts__icon {
+  padding-right: 12px;
+}
+
+.contacts__email {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.contacts__tel {
+  font-size: 16px;
+  line-height: 32px;
+}

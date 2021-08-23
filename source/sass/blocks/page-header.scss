@@ -1,0 +1,81 @@
+.page-header {
+  display: flex;
+  align-items: center;
+  padding: 37px 30px 31px 30px;
+  max-width: $desktop-width;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 32px;
+  color: $gray--dark;
+
+  @media (max-width: $tablet-width) {
+    padding: 0;
+    min-height: 50px;
+    background-color: $white;
+  }
+
+  &--closed .main-nav {
+    display: none;
+  }
+}
+
+.page-header__logo {
+  position: relative;
+  display: flex;
+
+  @media (max-width: $tablet-width) {
+    position: absolute;
+    left: 21px;
+    top: 15px;
+    width: 44px;
+    height: 17px;
+  }
+
+  @media (max-width: $mobile-width) {
+    left: 16px;
+    top: 16px;
+  }
+}
+
+.page-header__toggle {
+  display: none;
+
+  @media (max-width: $tablet-width) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 6;
+    padding: 0;
+    width: 72px;
+    height: 50px;
+    background-color: $accent;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.page-header__tel {
+  display: flex;
+  align-items: center;
+  color: $nav-text;
+  text-decoration: underline;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+
+  &:hover {
+    color: $accent;
+  }
+}
+
+.page-header__icon-tel {
+  padding-right: 12px;
+}
