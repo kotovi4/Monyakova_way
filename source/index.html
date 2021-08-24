@@ -27,7 +27,7 @@
     </symbol>
   </svg>
 
-  <header class="page-header">
+  <header class="page-header page-header--opened">
     <a class="page-header__logo" href="">
       <svg class="page-header__img" width="58" height="22">
         <use xlink:href="#sprite-logo"></use>
@@ -68,8 +68,70 @@
       </div>
     </section>
 
-    <section>
+    <section class="location">
+      <h2 class="location__title">Места посещения</h2>
+      <p class="location__text">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
+      <ul class="location__list">
+        <li class="location__item">
+          <a class="location__link location__link--greece" href="#greece">
+            <span class="location__details">Смотреть подробнее</span>
+            <span class="location__name">Греция</span>
+          </a>
+        </li>
+        <li class="location__item">
+          <a class="location__link location__link--albania" href="#albania">
+            <span class="location__details">Смотреть подробнее</span>
+            <span class="location__name">Албания</span>
+          </a>
+        </li>
+        <li class="location__item">
+          <a class="location__link location__link--macedonia" href="#macedonia">
+            <span class="location__details">Смотреть подробнее</span>
+            <span class="location__name">Македония</span>
+          </a>
+        </li>
+        <li class="location__item">
+          <a class="location__link location__link--montenegro" href="#montenegro">
+            <span class="location__details">Смотреть подробнее</span>
+            <span class="location__name">Черногория</span>
+          </a>
+        </li>
+        <li class="location__item">
+          <a class="location__link location__link--croatia" href="#croatia">
+            <span class="location__details">Смотреть подробнее</span>
+            <span class="location__name">Хорватия</span>
+          </a>
+        </li>
+      </ul>
+    </section>
 
+    <section class="country" id="country">
+      <h2 class="visually-hidden">Описание посещаемых стран</h2>
+      <ul class="country__list">
+        <li class="country__item">
+          <a href="#">Греция</a>
+        </li>
+        <li class="country__item">
+          <a href="#">Албания</a>
+        </li>
+        <li class="country__item">
+          <a href="#">Македония</a>
+        </li>
+        <li class="country__item">
+          <a href="#">Черногория</a>
+        </li>
+        <li class="country__item">
+          <a href="#">Хорватия</a>
+        </li>
+      </ul>
+      <ul class="country__tabs">
+        <li class="country__tab" data-country="Греция"></li>
+        <li class="country__tab" data-country="Албания"></li>
+        <li class="country__tab" data-country="Македония"></li>
+        <li class="country__tab" data-country="Черногория"></li>
+        <li class="country__tab" data-country="Хорватия"></li>
+
+      </ul>
     </section>
   </main>
   <footer class="page-footer">

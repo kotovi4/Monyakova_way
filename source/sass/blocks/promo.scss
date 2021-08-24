@@ -116,7 +116,8 @@
   }
 
   @media (max-width: $mobile-width) {
-    width: 208px;
+    width: 288px;
+    padding: 19px 0 17px 0;
   }
 
   &:hover,
@@ -144,6 +145,6 @@
   }
 
   @media (max-width: $mobile-width) {
-    padding-right: 89px;
+    padding-right: 10px;
   }
 }

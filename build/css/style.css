@@ -437,9 +437,9 @@ button {
 .page-header {
   display: flex;
   align-items: center;
+  margin: 0 auto;
   padding: 37px 30px 31px 30px;
   max-width: 1170px;
-  margin: 0 auto;
   font-size: 18px;
   line-height: 32px;
   color: #141517; }
@@ -766,7 +766,7 @@ button {
       padding-right: 16px;
       margin-top: 20px;
       margin-bottom: 20px;
-      color: #2f2f3f; } }
+      color: #2c2e3f; } }
 
 .promo__button {
   display: flex;
@@ -782,7 +782,8 @@ button {
       margin: 0 auto; } }
   @media (max-width: 767px) {
     .promo__button {
-      width: 208px; } }
+      width: 288px;
+      padding: 19px 0 17px 0; } }
   .promo__button:hover, .promo__button:active {
     background-color: #f17d4b; }
 
@@ -804,4 +805,217 @@ button {
       line-height: 12px; } }
   @media (max-width: 767px) {
     .promo__link {
-      padding-right: 89px; } }
+      padding-right: 10px; } }
+
+.location {
+  margin: 0 auto;
+  padding-top: 156px;
+  padding-right: 20px;
+  padding-left: 20px;
+  max-width: 1170px; }
+  @media (max-width: 1023px) {
+    .location {
+      width: 984px;
+      padding-top: 55px; } }
+  @media (max-width: 767px) {
+    .location {
+      width: 100%; } }
+
+.location__title {
+  position: relative;
+  width: 350px;
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 80px;
+  letter-spacing: -1.24px;
+  color: #2c2e3f; }
+  @media (max-width: 1023px) {
+    .location__title {
+      margin-bottom: 21px;
+      text-align: center;
+      width: 100%;
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 150%;
+      letter-spacing: -0.2px; } }
+  .location__title::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -32px;
+    width: 229px;
+    height: 4px;
+    background-color: #fe7865; }
+    @media (max-width: 1023px) {
+      .location__title::before {
+        display: none; } }
+
+.location__text {
+  padding-top: 19px;
+  width: 350px;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.46px;
+  color: rgba(44, 46, 63, 0.7); }
+  @media (max-width: 1023px) {
+    .location__text {
+      width: 358px;
+      margin: 0 auto;
+      padding-top: 0;
+      text-align: center; } }
+
+.location__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 51px 0 0;
+  padding: 0;
+  list-style: none; }
+  @media (max-width: 1023px) {
+    .location__list {
+      margin-top: 40px;
+      padding: 0 56px;
+      justify-content: center; } }
+
+.location__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-right: 60px;
+  margin-bottom: 102px;
+  min-width: 350px;
+  min-height: 430px; }
+  .location__item:nth-child(3) {
+    margin-right: 0; }
+  .location__item:nth-child(4) {
+    margin-left: 174px;
+    margin-right: 120px; }
+  @media (max-width: 1023px) {
+    .location__item {
+      min-width: 288px;
+      min-height: 425px;
+      margin-right: 0;
+      margin-bottom: 41px; }
+      .location__item:nth-child(1), .location__item:nth-child(3) {
+        margin-right: 39px; }
+      .location__item:nth-child(4) {
+        margin-left: 0;
+        margin-right: 0; } }
+
+.location__link {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  width: 350px;
+  height: 430px;
+  border: none; }
+  @media (max-width: 1023px) {
+    .location__link {
+      width: 288px;
+      height: 425px; } }
+  .location__link--greece {
+    background-image: url("../img/location-photo-greece@1x.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; }
+    @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+      .location__link--greece {
+        background-image: url("../img/location-photo-greece@2x.jpg"); } }
+    @media (max-width: 1023px) {
+      .location__link--greece {
+        background-image: url("../img/location-photo-greece-tablet@1x.jpg"); } }
+  @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+    .location__link--greece {
+      background-image: url("../img/location-photo-greece-tablet@2x.jpg"); } }
+  .location__link--albania {
+    background-image: url("../img/location-photo-albania@1x.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; }
+    @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+      .location__link--albania {
+        background-image: url("../img/location-photo-albania@2x.jpg"); } }
+    @media (max-width: 1023px) {
+      .location__link--albania {
+        background-image: url("../img/location-photo-albania-tablet@1x.jpg"); } }
+  @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+    .location__link--albania {
+      background-image: url("../img/location-photo-albania-tablet@2x.jpg"); } }
+  .location__link--macedonia {
+    background-image: url("../img/location-photo-macedonia@1x.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; }
+    @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+      .location__link--macedonia {
+        background-image: url("../img/location-photo-macedonia@2x.jpg"); } }
+    @media (max-width: 1023px) {
+      .location__link--macedonia {
+        background-image: url("../img/location-photo-macedonia-tablet@1x.jpg"); } }
+  @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+    .location__link--macedonia {
+      background-image: url("../img/location-photo-macedonia-tablet@2x.jpg"); } }
+  .location__link--montenegro {
+    background-image: url("../img/location-photo-montenegro@1x.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; }
+    @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+      .location__link--montenegro {
+        background-image: url("../img/location-photo-montenegro@2x.jpg"); } }
+    @media (max-width: 1023px) {
+      .location__link--montenegro {
+        background-image: url("../img/location-photo-montenegro-tablet@1x.jpg"); } }
+  @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+    .location__link--montenegro {
+      background-image: url("../img/location-photo-montenegro-tablet@2x.jpg"); } }
+  .location__link--croatia {
+    background-image: url("../img/location-photo-croatia@1x.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; }
+    @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+      .location__link--croatia {
+        background-image: url("../img/location-photo-croatia@2x.jpg"); } }
+    @media (max-width: 1023px) {
+      .location__link--croatia {
+        background-image: url("../img/location-photo-croatia-tablet@1x.jpg"); } }
+  @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+    .location__link--croatia {
+      background-image: url("../img/location-photo-croatia-tablet@2x.jpg"); } }
+
+.location__details {
+  position: absolute;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  top: 155px;
+  left: 50px;
+  z-index: 5;
+  width: 266px;
+  height: 77px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 2;
+  color: #ffffff;
+  opacity: 0.7;
+  text-transform: uppercase;
+  border: 1px solid #ffffff; }
+
+.location__link:hover {
+  filter: brightness(0.5); }
+
+.location__link:hover .location__details {
+  display: flex; }
+
+.location__name {
+  position: relative;
+  z-index: 1;
+  width: 215px;
+  padding: 16px 0;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: -0.41px;
+  background-color: #ffffff;
+  color: #2c2e3f; }
