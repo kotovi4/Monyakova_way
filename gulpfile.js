@@ -94,17 +94,17 @@ exports.scripts = scripts;
 
 // Images
 
-// const optimizeImages = () => {
-//   return gulp.src("source/img/**/*.{png,jpg,svg}")
-//     .pipe(imagemin([
-//       imagemin.mozjpeg({progressive: true}),
-//       imagemin.optipng({optimizationLevel: 3}),
-//       imagemin.svgo()
-//     ]))
-//     .pipe(gulp.dest("build/img"))
-// }
+const optimizeImages = () => {
+  return gulp.src("source/img/**/*.{png,jpg,svg}")
+    .pipe(imagemin([
+      imagemin.mozjpeg({progressive: true}),
+      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.svgo()
+    ]))
+    .pipe(gulp.dest("build/img"))
+}
 
-// exports.images = optimizeImages;
+exports.images = optimizeImages;
 
 const copyImages = () => {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
@@ -113,14 +113,14 @@ const copyImages = () => {
 
 exports.images = copyImages;
 
-// const optimazeSprite = () => {
-//   return gulp.src("build/img/sprite-*.svg")
-//   .pipe(svgstore({inlineSvg: true}))
-//   .pipe(rename("sprite.svg"))
-//   .pipe(gulp.dest("build/img"))
-// }
+const optimazeSprite = () => {
+  return gulp.src("build/img/sprite-*.svg")
+  .pipe(svgstore({inlineSvg: true}))
+  .pipe(rename("sprite.svg"))
+  .pipe(gulp.dest("build/img"))
+}
 
-// exports.images = optimazeSprite;
+exports.images = optimazeSprite;
 
 // WebP
 

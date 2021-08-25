@@ -70,10 +70,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: auto;
-    min-height: 235px;
     padding-left: 18px;
     padding-right: 12px;
+    width: auto;
+    min-height: 235px;
     font-weight: 600;
     font-size: 24px;
     letter-spacing: 0;
@@ -83,20 +83,20 @@
 }
 
 .promo__text {
+  margin-bottom: 34px;
   font-size: 16px;
   line-height: 170%;
   letter-spacing: -0.47px;
-  margin-bottom: 34px;
 
   @media (max-width: $tablet-width) {
     margin-bottom: 9px;
   }
 
   @media (max-width: $mobile-width) {
-    padding-left: 16px;
-    padding-right: 16px;
     margin-top: 20px;
     margin-bottom: 20px;
+    padding-left: 16px;
+    padding-right: 16px;
     color: $main-text;
   }
 }

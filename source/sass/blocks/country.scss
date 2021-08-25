@@ -1,0 +1,148 @@
+.country {
+  background-image: url("../img/country-bg-img.png");
+  background-repeat: no-repeat;
+  background-position-x: 238px;
+  background-position-y: 122px;
+  padding-bottom: 501px;
+
+  @media (max-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+    padding: 98px 0;
+  }
+}
+
+.country__wrapper {
+  margin: 0 auto;
+  padding-right: 20px;
+  padding-left: 20px;
+  max-width: $desktop-width;
+}
+
+.country__list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 23px;
+  margin-bottom: 65px;
+  padding: 0;
+  width: 902px;
+  list-style: none;
+  border-bottom: 1px solid transparentize($gray--dark, 0.5);
+}
+
+.country__item {
+  margin-bottom: 10px;
+}
+
+.country__link {
+  font-family: $font-deafult;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.41px;
+  color: transparentize($gray--dark, 0.5);
+
+  &--active {
+    color: $accent;
+  }
+}
+
+.country__tabs-list {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.country__tabs-item {
+  display: none;
+
+  &--active {
+    display: flex;
+  }
+}
+
+.country__description {
+  margin-right: 100px;
+}
+
+.country__description-title {
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 47px;
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 90px;
+  letter-spacing: -1.24px;
+  color: $main-text;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -19px;
+    width: 177px;
+    height: 4px;
+    background-color: $accent;
+  }
+}
+
+.country__description-text {
+  width: 370px;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.46px;
+  color: transparentize($gray--dark, 0.5);
+}
+
+.country__reviews {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 80px;
+  right: 0;
+  width: 322px;
+  height: 342px;
+  padding: 30px;
+  background-color: $white;
+}
+
+.country__reviews-title {
+  position: relative;
+  margin-top: 35px;
+  margin-bottom: 19px;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+  letter-spacing: -0.69px;
+  color: $main-text;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -11px;
+    width: 68px;
+    height: 0.73px;
+    background-color: $accent;
+  }
+}
+
+.country__reviews-text {
+  margin-bottom: 21px;
+  width: 322px;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: -0.4px;
+  color: transparentize($gray--dark, 0.5);
+}
+
+
+.country__reviews-author {
+  display: flex;
+  align-items: center;
+}
+
+.country__reviews-author-name {
+  padding-left: 15px;
+}

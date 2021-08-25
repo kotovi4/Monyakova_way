@@ -33,8 +33,8 @@
         <use xlink:href="#sprite-logo"></use>
       </svg>
     </a>
-    <button class="page-header__toggle" type="button">
-      <span class="visually-hidden">Открыть меню</span>
+    <button class="page-header__toggle" type="button" aria-label="Открыть меню">
+      <span class="page-header__toggle-line"></span>
     </button>
     <nav class="page-header__nav main-nav">
       <ul class="main-nav__list">
@@ -107,31 +107,117 @@
 
     <section class="country" id="country">
       <h2 class="visually-hidden">Описание посещаемых стран</h2>
-      <ul class="country__list">
-        <li class="country__item">
-          <a href="#">Греция</a>
-        </li>
-        <li class="country__item">
-          <a href="#">Албания</a>
-        </li>
-        <li class="country__item">
-          <a href="#">Македония</a>
-        </li>
-        <li class="country__item">
-          <a href="#">Черногория</a>
-        </li>
-        <li class="country__item">
-          <a href="#">Хорватия</a>
-        </li>
-      </ul>
-      <ul class="country__tabs">
-        <li class="country__tab" data-country="Греция"></li>
-        <li class="country__tab" data-country="Албания"></li>
-        <li class="country__tab" data-country="Македония"></li>
-        <li class="country__tab" data-country="Черногория"></li>
-        <li class="country__tab" data-country="Хорватия"></li>
-
-      </ul>
+      <div class="country__wrapper">
+        <ul class="country__list">
+          <li class="country__item">
+            <a class="country__link country__link--active" href="#">Греция</a>
+          </li>
+          <li class="country__item">
+            <a class="country__link" href="#">Албания</a>
+          </li>
+          <li class="country__item">
+            <a class="country__link" href="#">Македония</a>
+          </li>
+          <li class="country__item">
+            <a class="country__link" href="#">Черногория</a>
+          </li>
+          <li class="country__item">
+            <a class="country__link" href="#">Хорватия</a>
+          </li>
+        </ul>
+        <ul class="country__tabs-list">
+          <li class="country__tabs-item country__tabs-item--active" data-country="Греция">
+            <div class="country__description">
+              <h3 class="country__description-title">Греция</h3>
+              <p class="country__description-text">На севере Греции находится один из крупнейших комплексов монастырей, расположенных на вершинах скал. Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь основная цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры.</p>
+              <a class="country__description-button" href="">Купить тур сейчас</a>
+            </div>
+            <picture>
+              <img class="country__description-img" src="img/country-greece-img@1x.jpg" srcset="img/country-greece-img@2x.jpg 2x" width="430" height="596" alt="">
+            </picture>
+            <div class="country__reviews">
+              <h3 class="country__reviews-title">Отзывы</h3>
+              <p class="country__reviews-text">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании. Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на краю света!</p>
+              <div class="country__reviews-author">
+                <img class="country__reviews-author-avatar" src="img/avatar-vlada-img.jpg" width="38" height="38" alt="Аватар Влады Голициной">
+                <p class="country__reviews-author-name">Влада Голицина</p>
+              </div>
+            </div>
+          </li>
+          <li class="country__tabs-item" data-country="Албания">
+            <div class="country__description">
+              <h3 class="country__description-title">Албания</h3>
+              <p class="country__description-text">В Албании мы посетим Курорт Ксамиль. Этот курорт поразит вас чистейшей водой и удивительным пляжем. Вначале кажется, что на пляже вас встречает обычный, правда невероятно белоснежный и слишком крупный песок. Однако, присмотревшись, можно понять, что это не песок, а камни, перетёртые до такого мелкого состояния.</p>
+              <a class="country__description-button" href="">Купить тур сейчас</a>
+            </div>
+            <picture>
+              <img class="country__description-img" src="" alt="">
+            </picture>
+            <div class="country__reviews">
+              <h3 class="country__reviews-title">Отзывы</h3>
+              <p class="country__reviews-text">Замечательный курорт, обязательно стоит посетить. В следующий раз возьму с собой сестру, чтобы тоже смогла вкусить все красоты природы :)</p>
+              <div class="country__reviews-author">
+                <img class="country__reviews-author-avatar" src="" alt="Аватар Маришки">
+                <p class="country__reviews-author-name">Маришка</p>
+              </div>
+            </div>
+          </li>
+          <li class="country__tabs-item" data-country="Македония">
+            <div class="country__description">
+              <h3 class="country__description-title">Македония</h3>
+              <p class="country__description-text">В Македонии нашей целью будет посетить Палаошник, который расположился в удивительно красивой лесистой местности возле Охридского озера и Самуиловой твердыни. А также мы заберемся на вершину горы Татичев Камен где находится  археологический памятник Кокино в длину около 100 метров.</p>
+              <a class="country__description-button" href="">Купить тур сейчас</a>
+            </div>
+            <picture>
+              <img class="country__description-img" src="" alt="">
+            </picture>
+            <div class="country__reviews">
+              <h3 class="country__reviews-title">Отзывы</h3>
+              <p class="country__reviews-text">Я бы сказал необычное старое здание. В архитектуре я не разбираюсь, но подъем в гору был очень веселым так как люди оказались легкими и заводными. Красота природы впечатлила, особенно после долгого пути в гору.</p>
+              <div class="country__reviews-author">
+                <img class="country__reviews-author-avatar" src="" alt="Аватар Михаила Кузьмина">
+                <p class="country__reviews-author-name">Михаил Кузьмин</p>
+              </div>
+            </div>
+          </li>
+          <li class="country__tabs-item" data-country="Черногория">
+            <div class="country__description">
+              <h3 class="country__description-title">Черногория</h3>
+              <p class="country__description-text">Черногория удивит нас самым большим в Европе каньоном реки Тара, который в некоторых местах высотой берегов доходит до 1300 метров, а шириной не превышает трех. При этом длина каньона составляет 80 км.</p>
+              <a class="country__description-button" href="">Купить тур сейчас</a>
+            </div>
+            <picture>
+              <img class="country__description-img" src="" alt="">
+            </picture>
+            <div class="country__reviews">
+              <h3 class="country__reviews-title">Отзывы</h3>
+              <p class="country__reviews-text">Неописуемой красоты каньон! Ничего прекраснее в жизни не видела, разве что в фильмах :) Всем советую</p>
+              <div class="country__reviews-author">
+                <img class="country__reviews-author-avatar" src="" alt="Аватар Анастасии Мей">
+                <p class="country__reviews-author-name">Анастасия Мей</p>
+              </div>
+            </div>
+          </li>
+          <li class="country__tabs-item" data-country="Хорватия">
+            <div class="country__description">
+              <h3 class="country__description-title">Хорватия</h3>
+              <p class="country__description-text">В Хорватии мы посетим необычайную пещеру названную Бередине. Ее подземный мир увлечет вас на 80-ти метровую глубину через 5 освещенных залов, украшенных удивительными нерукотворными скульптурами —  сталактитами и сталагмитами —  формировавшимися тысячи и тысячи лет.</p>
+              <a class="country__description-button" href="">Купить тур сейчас</a>
+            </div>
+            <picture>
+              <img class="country__description-img" src="" alt="">
+            </picture>
+            <div class="country__reviews">
+              <h3 class="country__reviews-title">Отзывы</h3>
+              <p class="country__reviews-text">Мы поехали всей семьей, я, моя жена и родители. Пещера просто незабываема! А то, что все это формировалось тысячелетиями, мега необычно. Первоначально даже не верилось, но натур ни с чем не спутать по итогу :)</p>
+              <div class="country__reviews-author">
+                <img class="country__reviews-author-avatar" src="" width="37" height="38" alt="Аватар Владимира Мулицина">
+                <p class="country__reviews-author-name">Владимир Мулицин</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
     </section>
   </main>
   <footer class="page-footer">

@@ -61,6 +61,60 @@
   }
 }
 
+.page-header__toggle-line {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 22.5px;
+  height: 1px;
+  font-size: 0;
+  color: transparent;
+  background-color: $white;
+  transition: 0.3s;
+
+  &::after {
+    top: 5px;
+  }
+
+  &::before {
+    top: -5px;
+  }
+}
+
+.page-header__toggle-line::after,
+.page-header__toggle-line::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 22.5px;
+  height: 1px;
+  background-color: $white;
+  transform-origin: 50% 50%;
+  transition: 0.3s, transform 0.3s;
+}
+
+.page-header--opened .page-header__toggle-line {
+  background: transparent;
+}
+
+.page-header--opened .page-header__toggle-line::after,
+.page-header--opened .page-header__toggle-line::before {
+  transform: rotate3d(0, 0, 1, 45deg);
+  transition: 0.3s, transform 0.3s 0.3s;
+  top: 0;
+  left: 0;
+  width: 22.5px;
+  height: 1px;
+}
+
+.page-header--opened .page-header__toggle-line::before {
+  transform: rotate3d(0, 0, 1, -45deg);
+}
+
+.page-header--opened .page-header__toggle-line .page-header__toggle-line:hover {
+  background: transparent;
+}
+
 .page-header__tel {
   display: flex;
   align-items: center;
