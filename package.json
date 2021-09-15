@@ -40,6 +40,7 @@
     "node": "^12 || ^14"
   },
   "dependencies": {
+    "caniuse-lite": "^1.0.30001257",
     "del": "^6.0.0",
     "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^8.0.0",
