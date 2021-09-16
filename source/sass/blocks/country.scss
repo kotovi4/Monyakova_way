@@ -55,10 +55,10 @@
 }
 
 .country__tabs-item {
-  display: none;
+  display: flex;
 
-  &--active {
-    display: flex;
+  &--hidden {
+    display: none;
   }
 
   @media (max-width: $tablet-width) {

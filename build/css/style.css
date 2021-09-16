@@ -1130,9 +1130,10 @@ button {
   padding: 0; }
 
 .country__tabs-item {
-  display: none; }
-  .country__tabs-item--active {
-    display: flex; }
+  display: flex; }
+  @media (max-width: 1023px) {
+    .country__tabs-item {
+      flex-direction: column; } }
 
 .country__description {
   margin-right: 100px; }
@@ -1156,11 +1157,24 @@ button {
     background-color: #fe7865; }
 
 .country__description-text {
+  padding-bottom: 56px;
   width: 370px;
   font-size: 16px;
   line-height: 28px;
   letter-spacing: -0.46px;
   color: rgba(20, 21, 23, 0.5); }
+
+.country__description-button {
+  padding: 30px 40px;
+  width: 250px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #fe7865; }
 
 .country__reviews {
   position: absolute;
@@ -1172,6 +1186,9 @@ button {
   height: 342px;
   padding: 30px;
   background-color: #ffffff; }
+  @media (max-width: 1023px) {
+    .country__reviews {
+      position: relative; } }
 
 .country__reviews-title {
   position: relative;
