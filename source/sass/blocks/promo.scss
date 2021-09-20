@@ -3,25 +3,25 @@
   content: "";
   display: flex;
   min-height: 860px;
-  background: url("../img/promo-desktop-bg@1x.jpg");
+  background-image: url("../img/promo-desktop-bg@1x.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-color: $nav-text;
 
 
   @media (min-resolution: 1.5dppx) {
-    background: url("../img/promo-desktop-bg@2x.jpg");
+    background-image: url("../img/promo-desktop-bg@2x.jpg");
     background-size: cover;
   }
 
   @media (max-width: $tablet-width) {
     min-height: 344px;
-    background: url("../img/promo-tablet-bg@1x.jpg");
+    background-image: url("../img/promo-tablet-bg@1x.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 
     @media (min-resolution: 1.5dppx) {
-      background: url("../img/promo-tablet-bg@2x.jpg");
+      background-image: url("../img/promo-tablet-bg@2x.jpg");
       background-size: cover;
     }
   }
