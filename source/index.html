@@ -112,46 +112,46 @@
     <section class="country" id="country">
       <h2 class="visually-hidden">Описание посещаемых стран</h2>
       <div class="country__wrapper">
-        <ul class="country__list">
-          <li class="country__item">
-            <a class="country__link" href="#grece">Греция</a>
-          </li>
-          <li class="country__item">
-            <a class="country__link" href="#albania">Албания</a>
-          </li>
-          <li class="country__item">
-            <a class="country__link" href="#macedonia">Македония</a>
-          </li>
-          <li class="country__item">
-            <a class="country__link" href="#montenegro">Черногория</a>
-          </li>
-          <li class="country__item">
-            <a class="country__link" href="#croatia">Хорватия</a>
-          </li>
-        </ul>
+        <div class="country__links-list">
+          <ul class="country__list">
+            <li class="country__item">
+              <a class="country__link" href="#greece">Греция</a>
+            </li>
+            <li class="country__item">
+              <a class="country__link" href="#albania">Албания</a>
+            </li>
+            <li class="country__item">
+              <a class="country__link" href="#macedonia">Македония</a>
+            </li>
+            <li class="country__item">
+              <a class="country__link" href="#montenegro">Черногория</a>
+            </li>
+            <li class="country__item">
+              <a class="country__link" href="#croatia">Хорватия</a>
+            </li>
+          </ul>
+        </div>
         <ul class="country__tabs-list">
-          <li class="country__tabs-item country__tabs-item--active" id="grece">
+          <li class="country__tabs-item country__tabs-item--active" id="greece">
             <div class="country__description">
               <h3 class="country__description-title">Греция</h3>
               <p class="country__description-text">На севере Греции находится один из крупнейших комплексов монастырей, расположенных на вершинах скал. Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь основная цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры.</p>
               <a class="country__description-button" href="#">Купить тур сейчас</a>
             </div>
             <picture>
-              <source type="image/webp" media="(max-width: 767px)" srcset="img/country-greece-img-mobile@1x.webp, img/country-greece-img-mobile@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 1023px)" srcset="img/country-greece-img-tablet@1x.webp, img/country-greece-img-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/country-greece-img@1x.webp, img/country-greece-img@2x.webp 2x">
-              <source media="(max-width: 767px)" srcset="img/country-greece-img-mobile@1x.jpg, img/country-greece-img-mobile@2x.jpg 2x">
-              <source media="(max-width: 1023px)" srcset="img/country-greece-img-tablet@1x.jpg, img/country-greece-img-tablet@2x.jpg 2x">
               <img class="country__description-img" src="img/country-greece-img@1x.jpg" srcset="img/country-greece-img@2x.jpg 2x" width="430" height="596" alt="Греция">
             </picture>
-            <div class="country__reviews">
-              <h3 class="country__reviews-title">Отзывы</h3>
-              <p class="country__reviews-text">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании. Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на краю света!</p>
-              <div class="country__reviews-author">
-                <source type="image/webp" srcset="img/avatar-vlada-img@1x.webp, img/avatar-vlada-img@2x.webp 2x">
-                <img class="country__reviews-author-avatar" src="img/avatar-vlada-img@1x.jpg" srcset="img/avatar-vlada-img@2x.jpg 2x" width="38" height="38" alt="Аватар Влады Голициной">
-                <p class="country__reviews-author-name">Влада Голицина</p>
-              </div>
+            <div class="country__blockquote country__blockquote--greece">
+              <blockquote class="country__reviews">
+                <h3 class="country__reviews-title">Отзывы</h3>
+                <p class="country__reviews-text">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании. Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на краю света!</p>
+                <div class="country__reviews-author">
+                  <source type="image/webp" srcset="img/avatar-vlada-img@1x.webp, img/avatar-vlada-img@2x.webp 2x">
+                  <img class="country__reviews-author-avatar" src="img/avatar-vlada-img@1x.jpg" srcset="img/avatar-vlada-img@2x.jpg 2x" width="38" height="38" alt="Аватар Влады Голициной">
+                  <p class="country__reviews-author-name">Влада Голицина</p>
+                </div>
+              </blockquote>
             </div>
           </li>
           <li class="country__tabs-item" id="albania">
@@ -161,21 +161,19 @@
               <a class="country__description-button" href="">Купить тур сейчас</a>
             </div>
             <picture>
-              <source type="image/webp" media="(max-width: 767px)" srcset="img/country-albania-img-mobile@1x.webp, img/country-albania-img-mobile@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 1023px)" srcset="img/country-albania-img-tablet@1x.webp, img/country-albania-img-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/country-albania-img@1x.webp, img/country-albania-img@2x.webp 2x">
-              <source media="(max-width: 767px)" srcset="img/country-albania-img-mobile@1x.jpg, img/country-albania-img-mobile@2x.jpg 2x">
-              <source media="(max-width: 1023px)" srcset="img/country-albania-img-tablet@1x.jpg, img/country-albania-img-tablet@2x.jpg 2x">
               <img class="country__description-img" src="img/country-albania-img@1x.jpg" srcset="img/country-albania-img@2x.jpg 2x" width="430" height="596" alt="Албания">
             </picture>
-            <div class="country__reviews">
-              <h3 class="country__reviews-title">Отзывы</h3>
-              <p class="country__reviews-text">Замечательный курорт, обязательно стоит посетить. В следующий раз возьму с собой сестру, чтобы тоже смогла вкусить все красоты природы :)</p>
-              <div class="country__reviews-author">
-                <source type="image/webp" srcset="img/avatar-marishka-img@1x.webp, img/avatar-marishka-img@2x.webp 2x">
-                <img class="country__reviews-author-avatar" src="img/avatar-marishka-img@1x.jpg" srcset="img/marishka-vlada-img@2x.jpg 2x" width="38" height="38" alt="Аватар Маришки">
-                <p class="country__reviews-author-name">Маришка</p>
-              </div>
+            <div class="country__blockquote country__blockquote--albania">
+              <blockquote class="country__reviews">
+                <h3 class="country__reviews-title">Отзывы</h3>
+                <p class="country__reviews-text">Замечательный курорт, обязательно стоит посетить. В следующий раз возьму с собой сестру, чтобы тоже смогла вкусить все красоты природы :)</p>
+                <div class="country__reviews-author">
+                  <source type="image/webp" srcset="img/avatar-marishka-img@1x.webp, img/avatar-marishka-img@2x.webp 2x">
+                  <img class="country__reviews-author-avatar" src="img/avatar-marishka-img@1x.jpg" srcset="img/avatar-marishka-img@2x.jpg 2x" width="38" height="38" alt="Аватар Маришки">
+                  <p class="country__reviews-author-name">Маришка</p>
+                </div>
+              </blockquote>
             </div>
           </li>
           <li class="country__tabs-item" id="macedonia">
@@ -192,14 +190,16 @@
               <source media="(max-width: 1023px)" srcset="img/country-macedonia-img-tablet@1x.jpg, img/country-macedonia-img-tablet@2x.jpg 2x">
               <img class="country__description-img" src="img/country-macedonia-img@1x.jpg" srcset="img/country-macedonia-img@2x.jpg 2x" width="430" height="596" alt="Македония">
             </picture>
-            <div class="country__reviews">
-              <h3 class="country__reviews-title">Отзывы</h3>
-              <p class="country__reviews-text">Я бы сказал необычное старое здание. В архитектуре я не разбираюсь, но подъем в гору был очень веселым так как люди оказались легкими и заводными. Красота природы впечатлила, особенно после долгого пути в гору.</p>
-              <div class="country__reviews-author">
-                <source type="image/webp" srcset="img/avatar-mikhail-img@1x.webp, img/avatar-mikhail-img@2x.webp 2x">
-                <img class="country__reviews-author-avatar" src="img/avatar-mikhail-img@1x.jpg" srcset="img/avatar-mikhail-img@2x.jpg 2x" width="38" height="38" alt="Аватар Михаила Кузьмина">
-                <p class="country__reviews-author-name">Михаил Кузьмин</p>
-              </div>
+            <div class="country__blockquote country__blockquote--macedonia">
+              <blockquote class="country__reviews">
+                <h3 class="country__reviews-title">Отзывы</h3>
+                <p class="country__reviews-text">Я бы сказал необычное старое здание. В архитектуре я не разбираюсь, но подъем в гору был очень веселым так как люди оказались легкими и заводными. Красота природы впечатлила, особенно после долгого пути в гору.</p>
+                <div class="country__reviews-author">
+                  <source type="image/webp" srcset="img/avatar-mikhail-img@1x.webp, img/avatar-mikhail-img@2x.webp 2x">
+                  <img class="country__reviews-author-avatar" src="img/avatar-mikhail-img@1x.jpg" srcset="img/avatar-mikhail-img@2x.jpg 2x" width="38" height="38" alt="Аватар Михаила Кузьмина">
+                  <p class="country__reviews-author-name">Михаил Кузьмин</p>
+                </div>
+              </blockquote>
             </div>
           </li>
           <li class="country__tabs-item" id="montenegro">
@@ -209,21 +209,19 @@
               <a class="country__description-button" href="">Купить тур сейчас</a>
             </div>
             <picture>
-              <source type="image/webp" media="(max-width: 767px)" srcset="img/country-montenegro-img-mobile@1x.webp, img/country-montenegro-img-mobile@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 1023px)" srcset="img/country-montenegro-img-tablet@1x.webp, img/country-montenegro-img-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/country-montenegro-img@1x.webp, img/country-montenegro-img@2x.webp 2x">
-              <source media="(max-width: 767px)" srcset="img/country-montenegro-img-mobile@1x.jpg, img/country-montenegro-img-mobile@2x.jpg 2x">
-              <source media="(max-width: 1023px)" srcset="img/country-montenegro-img-tablet@1x.jpg, img/country-montenegro-img-tablet@2x.jpg 2x">
               <img class="country__description-img" src="img/country-montenegro-img@1x.jpg" srcset="img/country-montenegro-img@2x.jpg 2x" width="430" height="596" alt="Македония">
             </picture>
-            <div class="country__reviews">
-              <h3 class="country__reviews-title">Отзывы</h3>
-              <p class="country__reviews-text">Неописуемой красоты каньон! Ничего прекраснее в жизни не видела, разве что в фильмах :) Всем советую</p>
-              <div class="country__reviews-author">
-                <source type="image/webp" srcset="img/avatar-anastasia-img@1x.webp, img/avatar-anastasia-img@2x.webp 2x">
-                <img class="country__reviews-author-avatar" src="img/avatar-anastasia-img@1x.jpg" srcset="img/avatar-anastasia-img@2x.jpg 2x" width="38" height="38" alt="Аватар Анастасии Мей">
-                <p class="country__reviews-author-name">Анастасия Мей</p>
-              </div>
+            <div class="country__blockquote country__blockquote--montenegro">
+              <blockquote class="country__reviews">
+                <h3 class="country__reviews-title">Отзывы</h3>
+                <p class="country__reviews-text">Неописуемой красоты каньон! Ничего прекраснее в жизни не видела, разве что в фильмах :) Всем советую</p>
+                <div class="country__reviews-author">
+                  <source type="image/webp" srcset="img/avatar-anastasia-img@1x.webp, img/avatar-anastasia-img@2x.webp 2x">
+                  <img class="country__reviews-author-avatar" src="img/avatar-anastasia-img@1x.jpg" srcset="img/avatar-anastasia-img@2x.jpg 2x" width="38" height="38" alt="Аватар Анастасии Мей">
+                  <p class="country__reviews-author-name">Анастасия Мей</p>
+                </div>
+              </blockquote>
             </div>
           </li>
           <li class="country__tabs-item" id="croatia">
@@ -233,21 +231,19 @@
               <a class="country__description-button" href="">Купить тур сейчас</a>
             </div>
             <picture>
-              <source type="image/webp" media="(max-width: 767px)" srcset="img/country-croatia-img-mobile@1x.webp, img/country-croatia-img-mobile@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 1023px)" srcset="img/country-croatia-img-tablet@1x.webp, img/country-croatia-img-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/country-croatia-img@1x.webp, img/country-croatia-img@2x.webp 2x">
-              <source media="(max-width: 767px)" srcset="img/country-croatia-img-mobile@1x.jpg, img/country-croatia-img-mobile@2x.jpg 2x">
-              <source media="(max-width: 1023px)" srcset="img/country-croatia-img-tablet@1x.jpg, img/country-croatia-img-tablet@2x.jpg 2x">
               <img class="country__description-img" src="img/country-croatia-img@1x.jpg" srcset="img/country-croatia-img@2x.jpg 2x" width="430" height="596" alt="Македония">
             </picture>
-            <div class="country__reviews">
-              <h3 class="country__reviews-title">Отзывы</h3>
-              <p class="country__reviews-text">Мы поехали всей семьей, я, моя жена и родители. Пещера просто незабываема! А то, что все это формировалось тысячелетиями, мега необычно. Первоначально даже не верилось, но натур ни с чем не спутать по итогу :)</p>
-              <div class="country__reviews-author">
-                <source type="image/webp" srcset="img/avatar-vladimir-img@1x.webp, img/avatar-vladimir-img@2x.webp 2x">
-                <img class="country__reviews-author-avatar" src="img/avatar-vladimir-img@1x.jpg" srcset="img/avatar-vladimir-img@2x.jpg 2x" width="38" height="38" alt="Аватар Владимира Мулицина">
-                <p class="country__reviews-author-name">Владимир Мулицин</p>
-              </div>
+            <div class="country__blockquote country__blockquote--croatia">
+              <blockquote class="country__reviews">
+                <h3 class="country__reviews-title">Отзывы</h3>
+                <p class="country__reviews-text">Мы поехали всей семьей, я, моя жена и родители. Пещера просто незабываема! А то, что все это формировалось тысячелетиями, мега необычно. Первоначально даже не верилось, но натур ни с чем не спутать по итогу :)</p>
+                <div class="country__reviews-author">
+                  <source type="image/webp" srcset="img/avatar-vladimir-img@1x.webp, img/avatar-vladimir-img@2x.webp 2x">
+                  <img class="country__reviews-author-avatar" src="img/avatar-vladimir-img@1x.jpg" srcset="img/avatar-vladimir-img@2x.jpg 2x" width="38" height="38" alt="Аватар Владимира Мулицина">
+                  <p class="country__reviews-author-name">Владимир Мулицин</p>
+                </div>
+              </blockquote>
             </div>
           </li>
         </ul>

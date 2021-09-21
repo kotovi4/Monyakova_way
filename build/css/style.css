@@ -1050,7 +1050,7 @@ button {
   justify-content: center;
   align-items: center;
   top: 155px;
-  left: 50px;
+  left: auto;
   z-index: 5;
   width: 266px;
   height: 77px;
@@ -1092,13 +1092,23 @@ button {
     .country {
       display: flex;
       justify-content: center;
-      padding: 98px 0; } }
+      padding-bottom: 0;
+      background: none;
+      overflow: hidden; } }
 
 .country__wrapper {
   margin: 0 auto;
   padding-right: 20px;
   padding-left: 20px;
   max-width: 1170px; }
+  @media (max-width: 1023px) {
+    .country__wrapper {
+      width: 100%;
+      padding: 0; } }
+
+@media (max-width: 1023px) {
+  .country__links-list {
+    overflow-x: scroll; } }
 
 .country__list {
   display: flex;
@@ -1109,6 +1119,15 @@ button {
   width: 902px;
   list-style: none;
   border-bottom: 1px solid rgba(20, 21, 23, 0.5); }
+  @media (max-width: 1023px) {
+    .country__list {
+      margin-top: 52px;
+      margin-left: 21px;
+      margin-bottom: 0; } }
+  @media (max-width: 767px) {
+    .country__list {
+      margin-top: 5px;
+      margin-left: 16px; } }
 
 .country__item {
   margin-bottom: 10px; }
@@ -1139,10 +1158,18 @@ button {
 
 .country__description {
   margin-right: 100px; }
+  @media (max-width: 1023px) {
+    .country__description {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-right: 0;
+      padding: 0 20px; } }
 
 .country__description-title {
   position: relative;
-  margin-top: 10px;
+  margin-top: 30px;
   margin-bottom: 47px;
   font-weight: 600;
   font-size: 55px;
@@ -1157,6 +1184,18 @@ button {
     width: 177px;
     height: 4px;
     background-color: #fe7865; }
+    @media (max-width: 1023px) {
+      .country__description-title::before {
+        display: none; } }
+  @media (max-width: 1023px) {
+    .country__description-title {
+      margin-bottom: 0;
+      font-size: 30px;
+      line-height: 150%; } }
+  @media (max-width: 767px) {
+    .country__description-title {
+      margin-top: 25px;
+      font-size: 24px; } }
 
 .country__description-text {
   padding-bottom: 56px;
@@ -1165,6 +1204,11 @@ button {
   line-height: 28px;
   letter-spacing: -0.46px;
   color: rgba(20, 21, 23, 0.5); }
+  @media (max-width: 1023px) {
+    .country__description-text {
+      margin: 20px 0;
+      padding-bottom: 0;
+      width: auto; } }
 
 .country__description-button {
   padding: 30px 40px;
@@ -1177,24 +1221,103 @@ button {
   text-decoration: none;
   text-transform: uppercase;
   background-color: #fe7865; }
+  @media (max-width: 1023px) {
+    .country__description-button {
+      padding: 19px 40px;
+      width: 170px;
+      font-size: 10px;
+      line-height: 12px; } }
+  @media (max-width: 767px) {
+    .country__description-button {
+      padding: 19px 0;
+      width: 288px; } }
+
+@media (max-width: 1023px) {
+  .country__description-img {
+    display: none; } }
+
+@media (max-width: 1023px) {
+  .country__blockquote {
+    position: relative;
+    content: "";
+    display: flex;
+    margin-top: 30px;
+    min-height: 415px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #48494d; }
+    .country__blockquote--greece {
+      background-image: url("../img/country-greece-img-tablet@1x.jpg"); } }
+    @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+      .country__blockquote--greece {
+        background-image: url("../img/country-greece-img-tablet@2x.jpg");
+        background-size: cover; } }
+
+@media (max-width: 1023px) {
+    .country__blockquote--albania {
+      background-image: url("../img/country-albania-img-tablet@1x.jpg"); } }
+    @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+      .country__blockquote--albania {
+        background-image: url("../img/country-albania-img-tablet@2x.jpg");
+        background-size: cover; } }
+
+@media (max-width: 1023px) {
+    .country__blockquote--macedonia {
+      background-image: url("../img/country-macedonia-img-tablet@1x.jpg"); } }
+    @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+      .country__blockquote--macedonia {
+        background-image: url("../img/country-macedonia-img-tablet@2x.jpg");
+        background-size: cover; } }
+
+@media (max-width: 1023px) {
+    .country__blockquote--montenegro {
+      background-image: url("../img/country-montenegro-img-tablet@1x.jpg"); } }
+    @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+      .country__blockquote--montenegro {
+        background-image: url("../img/country-montenegro-img-tablet@2x.jpg");
+        background-size: cover; } }
+
+@media (max-width: 1023px) {
+    .country__blockquote--croatia {
+      background-image: url("../img/country-croatia-img-tablet@1x.jpg"); } }
+    @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+      .country__blockquote--croatia {
+        background-image: url("../img/country-croatia-img-tablet@2x.jpg");
+        background-size: cover; } }
+
+@media (max-width: 767px) {
+  .country__blockquote {
+    text-align: center;
+    margin-top: 49px; } }
 
 .country__reviews {
   position: absolute;
   display: flex;
   flex-direction: column;
-  top: 80px;
+  top: 100px;
   right: 0;
-  width: 322px;
-  height: 342px;
+  width: 282px;
+  height: 305px;
   padding: 30px;
   background-color: #ffffff; }
   @media (max-width: 1023px) {
     .country__reviews {
-      position: relative; } }
+      position: relative;
+      display: block;
+      margin: 0 auto;
+      top: 80px;
+      width: 322px; } }
+  @media (max-width: 767px) {
+    .country__reviews {
+      top: 50px;
+      margin-left: 26px;
+      margin-right: 26px;
+      padding: 20px;
+      width: 268px; } }
 
 .country__reviews-title {
   position: relative;
-  margin-top: 35px;
+  margin-top: 0;
   margin-bottom: 19px;
   font-weight: 500;
   font-size: 30px;
@@ -1209,18 +1332,38 @@ button {
     width: 68px;
     height: 0.73px;
     background-color: #fe7865; }
+    @media (max-width: 767px) {
+      .country__reviews-title::before {
+        left: auto;
+        margin-top: 12px; } }
+  @media (max-width: 1023px) {
+    .country__reviews-title {
+      margin-bottom: 32px; } }
+  @media (max-width: 767px) {
+    .country__reviews-title {
+      font-size: 20px;
+      line-height: 24px; } }
 
 .country__reviews-text {
-  margin-bottom: 21px;
+  margin-bottom: 19px;
   width: 322px;
   font-size: 14px;
   line-height: 28px;
   letter-spacing: -0.4px;
   color: rgba(20, 21, 23, 0.5); }
+  @media (max-width: 1023px) {
+    .country__reviews-text {
+      margin-bottom: 21px; } }
+  @media (max-width: 767px) {
+    .country__reviews-text {
+      width: auto; } }
 
 .country__reviews-author {
   display: flex;
   align-items: center; }
+  @media (max-width: 767px) {
+    .country__reviews-author {
+      flex-direction: column; } }
 
 .country__reviews-author-name {
   padding-left: 15px; }

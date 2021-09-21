@@ -8,7 +8,9 @@
   @media (max-width: $tablet-width) {
     display: flex;
     justify-content: center;
-    padding: 98px 0;
+    padding-bottom: 0;
+    background: none;
+    overflow: hidden;
   }
 }
 
@@ -17,6 +19,17 @@
   padding-right: 20px;
   padding-left: 20px;
   max-width: $desktop-width;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.country__links-list {
+  @media (max-width: $tablet-width) {
+    overflow-x: scroll;
+  }
 }
 
 .country__list {
@@ -28,6 +41,17 @@
   width: 902px;
   list-style: none;
   border-bottom: 1px solid transparentize($gray--dark, 0.5);
+
+  @media (max-width: $tablet-width) {
+    margin-top: 52px;
+    margin-left: 21px;
+    margin-bottom: 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 5px;
+    margin-left: 16px;
+  }
 }
 
 .country__item {
@@ -68,6 +92,15 @@
 
 .country__description {
   margin-right: 100px;
+
+  @media (max-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-right: 0;
+    padding: 0 20px;
+  }
 }
 
 .country__description-title {
@@ -88,6 +121,22 @@
     width: 177px;
     height: 4px;
     background-color: $accent;
+
+    @media (max-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-size: 30px;
+    line-height: 150%;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 25px;
+    font-size: 24px;
   }
 }
 
@@ -98,6 +147,12 @@
   line-height: 28px;
   letter-spacing: -0.46px;
   color: transparentize($gray--dark, 0.5);
+
+  @media (max-width: $tablet-width) {
+    margin: 20px 0;
+    padding-bottom: 0;
+    width: auto;
+  }
 }
 
 .country__description-button {
@@ -111,27 +166,122 @@
   text-decoration: none;
   text-transform: uppercase;
   background-color: $accent;
+
+  @media (max-width: $tablet-width) {
+    padding: 19px 40px;
+    width: 170px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 19px 0;
+    width: 288px;
+  }
+}
+
+.country__description-img {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.country__blockquote {
+  @media (max-width: $tablet-width) {
+    position: relative;
+    content: "";
+    display: flex;
+    margin-top: 30px;
+    min-height: 415px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: $nav-text;
+
+    &--greece {
+      background-image: url("../img/country-greece-img-tablet@1x.jpg");
+
+      @media (min-resolution: 1.5dppx) {
+        background-image: url("../img/country-greece-img-tablet@2x.jpg");
+        background-size: cover;
+      }
+    }
+
+    &--albania {
+      background-image: url("../img/country-albania-img-tablet@1x.jpg");
+
+      @media (min-resolution: 1.5dppx) {
+        background-image: url("../img/country-albania-img-tablet@2x.jpg");
+        background-size: cover;
+      }
+    }
+
+    &--macedonia {
+      background-image: url("../img/country-macedonia-img-tablet@1x.jpg");
+
+      @media (min-resolution: 1.5dppx) {
+        background-image: url("../img/country-macedonia-img-tablet@2x.jpg");
+        background-size: cover;
+      }
+    }
+
+    &--montenegro {
+      background-image: url("../img/country-montenegro-img-tablet@1x.jpg");
+
+      @media (min-resolution: 1.5dppx) {
+        background-image: url("../img/country-montenegro-img-tablet@2x.jpg");
+        background-size: cover;
+      }
+    }
+
+    &--croatia {
+      background-image: url("../img/country-croatia-img-tablet@1x.jpg");
+
+      @media (min-resolution: 1.5dppx) {
+        background-image: url("../img/country-croatia-img-tablet@2x.jpg");
+        background-size: cover;
+      }
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    text-align: center;
+    margin-top: 49px;
+  }
 }
 
 .country__reviews {
   position: absolute;
   display: flex;
   flex-direction: column;
-  top: 80px;
-  right: 0;
-  width: 322px;
-  height: 342px;
+  top: 100px;
+  right: -100px;
+  width: 382px;
+  height: 305px;
   padding: 30px;
   background-color: $white;
 
   @media (max-width: $tablet-width) {
     position: relative;
+    display: block;
+    margin: 0 auto;
+    top: 80px;
+    right: 0;
+    width: 322px;
+  }
+
+  @media (max-width: $mobile-width) {
+    top: 50px;
+    margin-left: 26px;
+    margin-right: 26px;
+    padding: 20px;
+    width: 268px;
+    height: 431px;
   }
 }
 
 .country__reviews-title {
   position: relative;
-  margin-top: 35px;
+  margin-top: 0;
   margin-bottom: 19px;
   font-weight: 500;
   font-size: 30px;
@@ -147,24 +297,55 @@
     width: 68px;
     height: 0.73px;
     background-color: $accent;
+
+    @media (max-width: $mobile-width) {
+      left: auto;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 32px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 12px;
+    font-size: 20px;
+    line-height: 24px;
   }
 }
 
 .country__reviews-text {
-  margin-bottom: 21px;
+  margin-bottom: 19px;
   width: 322px;
   font-size: 14px;
   line-height: 28px;
   letter-spacing: -0.4px;
   color: transparentize($gray--dark, 0.5);
-}
 
+  @media (max-width: $tablet-width) {
+    margin-bottom: 21px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 17px;
+    width: auto;
+  }
+}
 
 .country__reviews-author {
   display: flex;
   align-items: center;
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+  }
 }
 
 .country__reviews-author-name {
   padding-left: 15px;
+
+  @media (max-width: $mobile-width) {
+    margin-top: 7px;
+    padding-left: 12px;
+  }
 }
