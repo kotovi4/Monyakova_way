@@ -1,0 +1,35 @@
+.price {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 30px 138px;
+  max-width: 1170px;
+}
+
+.price__wrapper {
+  width: 289px;
+  padding-top: 30px;
+  order: 2;
+}
+
+.price__title {
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 90px;
+  color: $main-text;
+}
+
+.price__text {
+  font-size: 16px;
+  line-height: 170%;
+}
+
+.price__list {
+  display: flex;
+  width: 770px;
+  column-gap: 30px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

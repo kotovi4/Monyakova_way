@@ -1,0 +1,90 @@
+.offer {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 30px 30px;
+  width: 370px;
+  height: 629px;
+  box-shadow: 0 0 0 1px $gray;
+  border-radius: 6px;
+  transition-timing-function: ease-out;
+  transition-duration: 0.3s;
+  transition-property: box-shadow;
+  background-color: $white;
+  cursor: pointer;
+
+  &:focus,
+  &:hover {
+    box-shadow: 0 0 0 3px $accent;
+  }
+
+  &:focus .offer__title,
+  &:hover .offer__title {
+    color: $accent;
+  }
+
+  &:focus .offer__text,
+  &:hover .offer__text {
+    border-color: $accent;
+  }
+}
+
+.offer__title {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 40px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 34px;
+  color: transparentize($gray--dark, 0.3);
+
+  &--active {
+    color: $accent;
+  }
+}
+
+.offer__title-span {
+  margin-left: 30px;
+}
+
+.offer__text {
+  padding-bottom: 28px;
+  font-size: 16px;
+  line-height: 24px;
+  border-bottom: 1px solid transparentize($gray--dark, 0.7);
+}
+
+.offer__list {
+  margin: 15px 0;
+  padding: 0 15px 0 30px;
+  list-style: none;
+}
+
+.offer__item {
+  padding: 0 0 15px;
+  font-size: 16px;
+  line-height: 32px;
+  color: $main-text;
+}
+
+.offer__button {
+  display: block;
+  margin-top: auto;
+  padding: 28px 40px 32px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 2px;
+  text-align: center;
+  color: $white;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: $accent;
+  transition-timing-function: ease-out;
+  transition-duration: 0.3s;
+  transition-property: transform;
+
+  &:hover,
+  &:focus {
+    background-color: $button-active;
+  }
+}
