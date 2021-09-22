@@ -1169,7 +1169,7 @@ button {
 
 .country__description-title {
   position: relative;
-  margin-top: 30px;
+  margin-top: 10px;
   margin-bottom: 47px;
   font-weight: 600;
   font-size: 55px;
@@ -1189,6 +1189,7 @@ button {
         display: none; } }
   @media (max-width: 1023px) {
     .country__description-title {
+      margin-top: 30px;
       margin-bottom: 0;
       font-size: 30px;
       line-height: 150%; } }
@@ -1295,8 +1296,8 @@ button {
   display: flex;
   flex-direction: column;
   top: 100px;
-  right: 0;
-  width: 282px;
+  right: -100px;
+  width: 382px;
   height: 305px;
   padding: 30px;
   background-color: #ffffff; }
@@ -1306,6 +1307,7 @@ button {
       display: block;
       margin: 0 auto;
       top: 80px;
+      right: 0;
       width: 322px; } }
   @media (max-width: 767px) {
     .country__reviews {
@@ -1313,7 +1315,8 @@ button {
       margin-left: 26px;
       margin-right: 26px;
       padding: 20px;
-      width: 268px; } }
+      width: 268px;
+      height: 431px; } }
 
 .country__reviews-title {
   position: relative;
@@ -1334,13 +1337,13 @@ button {
     background-color: #fe7865; }
     @media (max-width: 767px) {
       .country__reviews-title::before {
-        left: auto;
-        margin-top: 12px; } }
+        left: auto; } }
   @media (max-width: 1023px) {
     .country__reviews-title {
       margin-bottom: 32px; } }
   @media (max-width: 767px) {
     .country__reviews-title {
+      margin-top: 12px;
       font-size: 20px;
       line-height: 24px; } }
 
@@ -1356,6 +1359,7 @@ button {
       margin-bottom: 21px; } }
   @media (max-width: 767px) {
     .country__reviews-text {
+      margin-bottom: 17px;
       width: auto; } }
 
 .country__reviews-author {
@@ -1367,3 +1371,7 @@ button {
 
 .country__reviews-author-name {
   padding-left: 15px; }
+  @media (max-width: 767px) {
+    .country__reviews-author-name {
+      margin-top: 7px;
+      padding-left: 12px; } }

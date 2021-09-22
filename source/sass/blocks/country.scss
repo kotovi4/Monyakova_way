@@ -16,8 +16,9 @@
 
 .country__wrapper {
   margin: 0 auto;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding: 0 20px;
+  // padding-right: 20px;
+  // padding-left: 20px;
   max-width: $desktop-width;
 
   @media (max-width: $tablet-width) {
@@ -56,6 +57,13 @@
 
 .country__item {
   margin-bottom: 10px;
+
+  @media (max-width: $tablet-width) {
+
+    &:last-child {
+      margin-right: 21px;
+    }
+  }
 }
 
 .country__link {
@@ -188,11 +196,9 @@
 
 .country__blockquote {
   @media (max-width: $tablet-width) {
-    position: relative;
-    content: "";
-    display: flex;
-    margin-top: 30px;
-    min-height: 415px;
+    display: block;
+    margin: 30px 0 70px;
+    height: 415px;
     background-size: cover;
     background-repeat: no-repeat;
     background-color: $nav-text;
@@ -254,8 +260,8 @@
   display: flex;
   flex-direction: column;
   top: 100px;
-  right: -100px;
-  width: 382px;
+  right: -40px;
+  width: 322px;
   height: 305px;
   padding: 30px;
   background-color: $white;
@@ -263,19 +269,17 @@
   @media (max-width: $tablet-width) {
     position: relative;
     display: block;
-    margin: 0 auto;
-    top: 80px;
-    right: 0;
+    margin: 80px auto 0;
+    top: auto;
+    right: auto;
     width: 322px;
   }
 
   @media (max-width: $mobile-width) {
-    top: 50px;
-    margin-left: 26px;
-    margin-right: 26px;
     padding: 20px;
-    width: 268px;
-    height: 431px;
+    margin: 50px auto 0;
+    width: 228px;
+    height: 391px;
   }
 }
 
@@ -300,6 +304,7 @@
 
     @media (max-width: $mobile-width) {
       left: auto;
+      width: 80px;
     }
   }
 
