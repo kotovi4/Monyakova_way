@@ -99,11 +99,11 @@ exports.scripts = scripts;
 //     .pipe(imagemin([
 //       imagemin.mozjpeg({progressive: true}),
 //       imagemin.optipng({optimizationLevel: 3}),
-//       imagemin.svgo()
+//       imagemin.svgo({plugins: [{removeViewBox: false}]})
 //     ]))
 //     .pipe(gulp.dest("build/img"))
 // }
-
+//
 // exports.images = optimizeImages;
 
 const copyImages = () => {
@@ -113,14 +113,14 @@ const copyImages = () => {
 
 exports.images = copyImages;
 
-const optimazeSprite = () => {
+const optimizeSprite = () => {
   return gulp.src("build/img/sprite-*.svg")
   .pipe(svgstore({inlineSvg: true}))
   .pipe(rename("sprite.svg"))
   .pipe(gulp.dest("build/img"))
 }
 
-exports.images = optimazeSprite;
+exports.images = optimizeSprite;
 
 // WebP
 
