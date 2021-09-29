@@ -1,0 +1,11 @@
+.page-main {
+  padding-bottom: 122px;
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 42px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-bottom: 22px;
+  }
+}

@@ -8,26 +8,48 @@
   background-image: url("../img/callback-bg-img@1x.png");
   background-repeat: no-repeat;
   background-size: auto 100%;
-  background-position: 12px 0;
+  background-position: 29px 0;
 
   @media (min-resolution: 1.5dppx) {
     background-image: url("../img/callback-bg-img@2x.png");
+  }
+
+  @media (max-width: $tablet-width) {
+    justify-content: center;
+    padding: 70px 0 75px;
+    background-size: cover;
+    background-position: 0 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 14px 0 0;
+    background-image: none;
   }
 }
 
 .callback__wrapper {
   width: 100%;
   max-width: 656px;
-  margin-right: -12px;
   padding: 50px 49px 49px 50px;
   text-align: center;
   background-color: $white;
   border-radius: 5px;
   box-shadow: 0 4px 30px $callback-shadow;
+  box-sizing: border-box;
+
+  @media (max-width: $mobile-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 16px;
+    background-color: $callback-bg;
+    box-shadow: none;
+  }
 }
 
 .callback__title {
   display: block;
+  margin-top: 0;
   margin-bottom: 11px;
   font-weight: 600;
   font-size: 25px;
@@ -40,12 +62,23 @@
   font-size: 16px;
   line-height: 150%;
   color: $gray--dark;
+
+  @media (max-width: $mobile-width) {
+    margin: 9px 0 21px;
+  }
 }
 
 .callback__form {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    max-width: 288px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .callback__form-wrapper {
@@ -53,6 +86,10 @@
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
+
+  @media (max-width: $mobile-width) {
+    width: 288px;
+  }
 }
 
 .callback__form-input {
@@ -63,9 +100,18 @@
   font-size: 14px;
   line-height: 17px;
   color: $gray--dark;
+  box-sizing: border-box;
   transition-timing-function: ease-out;
   transition-duration: 0.3s;
   transition-property: border;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 16px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
 
   &:invalid {
     border: 1px solid $accent;
@@ -87,10 +133,23 @@
     background-repeat: no-repeat;
     background-position: 14px 5px;
     background-size: auto 29px;
+
+    @media (max-width: $mobile-width) {
+      padding: 14px 15px 19px 50px;
+    }
   }
 }
 
 .callback__button {
   padding: 18px 10px 17px;
   min-width: 176px;
+
+  @media (max-width: $tablet-width) {
+    min-width: 249px;
+    padding: 20px 10px 18px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
 }
