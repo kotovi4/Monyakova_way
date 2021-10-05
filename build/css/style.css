@@ -612,7 +612,7 @@ button {
   flex-grow: 1; }
   @media (max-width: 1023px) {
     .page-main {
-      padding-bottom: 42px; } }
+      padding-bottom: 80px; } }
   @media (max-width: 767px) {
     .page-main {
       padding-bottom: 22px; } }
@@ -1000,8 +1000,7 @@ button {
 
 .country__wrapper {
   position: relative;
-  margin: 0 auto;
-  padding: 0 20px; }
+  margin: 0 auto; }
   .country__wrapper::before {
     content: "";
     position: absolute;
@@ -1726,7 +1725,7 @@ button {
   border-right: 1px solid #d7d9df; }
   @media (max-width: 1023px) {
     .next-trips {
-      width: 378px;
+      width: 395px;
       margin-bottom: 30px; } }
   @media (max-width: 767px) {
     .next-trips {
@@ -1741,6 +1740,9 @@ button {
   list-style: none; }
   .next-trips__list:nth-of-type(3n) {
     margin-right: 0; }
+  @media (max-width: 1023px) {
+    .next-trips__list {
+      margin: 0 48px 0 0; } }
   @media (max-width: 767px) {
     .next-trips__list {
       margin-right: 10px;
@@ -1754,8 +1756,9 @@ button {
   color: rgba(20, 21, 23, 0.5); }
 
 .corporate-trip {
-  padding-left: 54px;
-  width: 332px;
+  padding-left: 56px;
+  padding-right: 10px;
+  width: 320px;
   border-left: 1px solid #d7d9df; }
   @media (max-width: 1023px) {
     .corporate-trip {
@@ -1785,7 +1788,7 @@ button {
   @media (max-width: 1023px) {
     .contacts {
       margin-right: 0;
-      width: 300px; } }
+      width: 262px; } }
   @media (max-width: 767px) {
     .contacts {
       padding: 0;

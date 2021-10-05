@@ -7,8 +7,8 @@
   border-right: 1px solid $gray;
 
   @media (max-width: $tablet-width) {
-    width: 378px;
-    margin-bottom: 30px;
+    width: 395px;
+    margin-bottom: 18px;
   }
 
   @media (max-width: $mobile-width) {
@@ -26,6 +26,10 @@
 
   &:nth-of-type(3n) {
     margin-right: 0;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin: 0 48px 0 0;
   }
 
   @media (max-width: $mobile-width) {
