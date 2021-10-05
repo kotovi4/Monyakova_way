@@ -1,10 +1,13 @@
 .country {
-  padding-bottom: 225px;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 155px;
+  max-width: $desktop-width;
 
   @media (max-width: $tablet-width) {
     display: flex;
     justify-content: center;
-    padding-bottom: 0;
+    padding: 0;
     background: none;
     overflow: hidden;
   }
@@ -13,20 +16,22 @@
 .country__wrapper {
   position: relative;
   margin: 0 auto;
-  padding: 0 20px;
-  max-width: $desktop-width;
 
   &::before {
     content: "";
     position: absolute;
     top: 157px;
-    left: calc(50% - 857px);
+    //left: calc(50% - 857px);
     z-index: -1;
     width: 100%;
     height: 1089px;
     background-image: url("../img/country-bg-img.png");
     background-repeat: no-repeat;
     background-size: contain;
+
+    @media (max-width: $tablet-width) {
+      background-image: none;
+    }
   }
 
   @media (max-width: $tablet-width) {

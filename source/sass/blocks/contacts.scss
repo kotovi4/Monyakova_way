@@ -1,7 +1,7 @@
 .contacts {
-  margin-right: 21px;
+  margin-left: auto;
+  margin-right: 55px;
   padding: 0 20px;
-  width: 310px;
 
   @media (max-width: $tablet-width) {
     margin-right: 0;
@@ -34,11 +34,13 @@
 }
 
 .contacts__email {
+  margin: 0;
   font-size: 14px;
   line-height: 17px;
 }
 
 .contacts__tel {
+  margin-top: 23px;
   font-size: 16px;
   line-height: 32px;
 }

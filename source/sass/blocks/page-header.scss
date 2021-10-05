@@ -125,8 +125,12 @@
     display: none;
   }
 
-  &:hover {
+  &:hover,
+  &:focus,
+  &:hover .page-header__icon-tel,
+  &:focus .page-header__icon-tel {
     color: $accent;
+    stroke: $accent;
   }
 }
 

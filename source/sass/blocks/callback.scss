@@ -3,7 +3,7 @@
   justify-content: flex-end;
   margin: 0 auto;
   padding: 70px 30px;
-  width: 100%;
+  //width: 100%;
   max-width: $desktop-width;
   background-image: url("../img/callback-bg-img@1x.png");
   background-repeat: no-repeat;
@@ -115,11 +115,6 @@
 
   &:invalid {
     border: 1px solid $accent;
-  }
-
-  &:hover,
-  &:focus {
-    border: 1px solid $gray--light;
   }
 
   &::placeholder {

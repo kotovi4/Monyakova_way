@@ -112,6 +112,11 @@
   &:nth-child(4) {
     margin-left: 174px;
     margin-right: 120px;
+    margin-bottom: 62px;
+  }
+
+  &:nth-child(5) {
+    margin-bottom: 62px;
   }
 
   @media (max-width: $desktop-min-width) {
@@ -128,6 +133,11 @@
     &:nth-child(4) {
       margin-left: 0;
       margin-right: 0;
+      margin-bottom: 41px;
+    }
+
+    &:nth-child(5) {
+      margin-bottom: 41px;
     }
   }
 
@@ -137,6 +147,14 @@
     &:nth-child(1),
     &:nth-child(3) {
       margin-right: 0;
+    }
+
+    &:nth-child(4) {
+      margin-bottom: 34px;
+    }
+
+    &:nth-child(5) {
+      margin-bottom: 36px;
     }
   }
 }
