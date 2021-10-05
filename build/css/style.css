@@ -615,7 +615,7 @@ button {
       padding-bottom: 80px; } }
   @media (max-width: 767px) {
     .page-main {
-      padding-bottom: 22px; } }
+      padding-bottom: 57px; } }
 
 .promo {
   position: relative;
@@ -1699,8 +1699,7 @@ button {
     .page-footer {
       display: flex;
       flex-wrap: wrap;
-      padding-right: 20px;
-      padding-left: 20px; } }
+      padding: 0 20px 53px; } }
   @media (max-width: 767px) {
     .page-footer {
       position: relative;
@@ -1726,7 +1725,7 @@ button {
   @media (max-width: 1023px) {
     .next-trips {
       width: 395px;
-      margin-bottom: 30px; } }
+      margin-bottom: 18px; } }
   @media (max-width: 767px) {
     .next-trips {
       justify-content: center;
@@ -1764,7 +1763,7 @@ button {
     .corporate-trip {
       flex-grow: 2;
       text-align: center;
-      padding-left: 0;
+      padding: 0;
       border-top: 1px solid #d7d9df;
       border-left: none; } }
   @media (max-width: 767px) {

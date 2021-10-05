@@ -13,6 +13,7 @@
 
   @media (max-width: $mobile-width) {
     justify-content: center;
+    margin-bottom: 29px;
     width: 100%;
     border-right: none;
     border-bottom: 1px solid $gray;
@@ -26,6 +27,17 @@
 
   &:nth-of-type(3n) {
     margin-right: 0;
+
+    @media (max-width: $mobile-width) {
+      margin-top: 10px;
+      margin-bottom: 19px;
+    }
+  }
+
+  &:nth-of-type(2n) {
+    @media (max-width: $mobile-width) {
+      margin-right: 0;
+    }
   }
 
   @media (max-width: $tablet-width) {
@@ -33,7 +45,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    margin-right: 10px;
+    margin-right: 19px;
     width: 134px;
   }
 }

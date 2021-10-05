@@ -15,4 +15,10 @@
   transition-timing-function: ease-out;
   transition-duration: 0.3s;
   transition-property: background-color, transform;
+
+  @media (max-width: $tablet-width) {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+  }
 }
