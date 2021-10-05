@@ -397,6 +397,27 @@
       <p class="corporate-trip__text">Также вы можете заказать индивидуальное путешествие под вашу компанию. Подобные туры очень сближают компанию, помогают поддерживать корпоративный дух, а также являются отличным времяпрепровождением</p>
     </div>
   </footer>
+
+  <section class="modal">
+    <div class="modal__card">
+      <div class="modal__wrapper">
+        <h2 class="modal__title">Купить тур</h2>
+        <form class="modal__form" action="https://echo.htmlacademy.ru" method="post" autocomplete="off">
+          <label class="visually-hidden" for="modal-tel">Телефон</label>
+          <input class="modal__input modal__input--tel" id="modal-tel" name="modal-tel" type="tel" maxlength="10" placeholder="Введите 10 цифр номера" required>
+          <label class="visually-hidden" for="modal-email">Email</label>
+          <input class="modal__input" id="modal-email" name="modal-email" type="email" autocomplete="email" autocapitalize="off" placeholder="Email">
+          <button class="modal__button button" type="submit">Отправить</button>
+        </form>
+      </div>
+
+      <div class="modal__success">Форма успешно отправлена, спасибо! :)</div>
+      <button class="modal__close" type="button" aria-label="Закрыть">
+        <span class="modal__close-line"></span>
+      </button>
+    </div>
+  </section>
+
   <script src="js/script.min.js"></script>
 </body>
 </html>

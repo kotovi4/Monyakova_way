@@ -64,7 +64,7 @@
   color: $gray--dark;
 
   @media (max-width: $mobile-width) {
-    margin: 9px 0 21px;
+    margin: 9px 0 17px;
   }
 }
 
@@ -95,8 +95,8 @@
 .callback__form-input {
   width: 269px;
   margin-bottom: 25px;
-  padding: 16px 15px 15px 14px;
-  font-family: "Montserrat", "Arial", sans-serif;
+  padding: 16px 15px 17px 14px;
+  font-family: $font-deafult;
   font-size: 14px;
   line-height: 17px;
   color: $gray--dark;
@@ -110,6 +110,7 @@
   }
 
   @media (max-width: $mobile-width) {
+    margin-bottom: 19px;
     width: 100%;
   }
 
@@ -118,7 +119,7 @@
   }
 
   &::placeholder {
-    font-family: "Montserrat", "Arial", sans-serif;
+    font-family: $font-deafult;
     color: $gray--dark;
   }
 
@@ -130,7 +131,7 @@
     background-size: auto 29px;
 
     @media (max-width: $mobile-width) {
-      padding: 14px 15px 19px 50px;
+      padding: 16px 15px 15px 50px;
     }
   }
 }
