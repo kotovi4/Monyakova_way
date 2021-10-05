@@ -2,10 +2,12 @@
   "name": "monyakova_way",
   "private": true,
   "description": "Путешествие по Европе // Грейдирование - HTML Academy",
+  "homepage": "https://kotovi4.github.io/monyakova_way",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "^10.2.5",
     "browser-sync": "^2.26.14",
+    "gh-pages": "^3.2.3",
     "gulp": "4.0.2",
     "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^8.0.0",
@@ -17,8 +19,10 @@
     "gulp-svgstore": "^8.0.0",
     "gulp-terser": "^2.0.1",
     "gulp-webp": "^4.0.1",
+    "imask": "^6.2.2",
     "postcss": "8.2.8",
     "postcss-csso": "^5.0.1",
+    "push-dir": "^0.4.1",
     "sass": "^1.38.0",
     "stylelint": "13.13.1",
     "stylelint-config-htmlacademy": "0.1.10"
@@ -28,7 +32,8 @@
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp styles",
-    "start": "gulp"
+    "start": "gulp",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": [
     "last 2 versions",

@@ -51,3 +51,21 @@ countryIcons.forEach((element, index) => {
     changeCards(index);
   });
 });
+
+//модальное окно
+const modal = document.querySelector('.modal');
+const modalSuccess = modal.querySelector('.modal__success');
+const modalInputTel = modal.querySelector('.modal__input--tel');
+const modalClose = modal.querySelector('.modal__close');
+const buttonBuyNow = document.querySelector('.button--buy-now');
+
+buttonBuyNow.onclick = () => {
+  modal.classList.remove('modal--show');
+  modalSuccess.classList.remove('modal__success--show');
+}
+
+//закрыть модальное окно
+modalClose.onclick = () => {
+  modal.classList.remove('modal--show');
+  modalSuccess.classList.remove('modal__success--show');
+}

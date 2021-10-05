@@ -1650,7 +1650,7 @@ button {
     font-family: "Montserrat", "Arial", sans-serif;
     color: #141517; }
   .callback__form-input--tel {
-    padding: 16px 15px 15px 50px;
+    padding: 16px 15px 18px 50px;
     background-image: url("../img/input-tel.svg");
     background-repeat: no-repeat;
     background-position: 14px 5px;
@@ -1729,7 +1729,7 @@ button {
   border-right: 1px solid #d7d9df; }
   @media (max-width: 1023px) {
     .next-trips {
-      width: 395px;
+      width: 50%;
       margin-bottom: 18px; } }
   @media (max-width: 767px) {
     .next-trips {
@@ -1871,12 +1871,21 @@ button {
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
     .modal__card {
       background-image: url("../img/modal-img@2x.jpg"); } }
+  @media (max-width: 767px) {
+    .modal__card {
+      width: 320px;
+      min-height: 460px;
+      background-image: none; } }
 
 .modal__wrapper {
   width: 390px;
   height: 100%;
   padding: 72px 20px 20px 18px;
   box-sizing: border-box; }
+  @media (max-width: 767px) {
+    .modal__wrapper {
+      width: 100%;
+      padding: 50px 16px 20px 16px; } }
 
 .modal__title {
   margin: 0 0 50px;
@@ -1888,6 +1897,9 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; }
+  @media (max-width: 767px) {
+    .modal__form {
+      width: 100%; } }
 
 .modal__input {
   width: 270px;
@@ -1908,10 +1920,21 @@ button {
     background-repeat: no-repeat;
     background-position: 14px 5px;
     background-size: auto 29px; }
+  @media (max-width: 767px) {
+    .modal__input {
+      width: 100%;
+      margin-bottom: 21px; } }
 
 .modal__success {
   position: absolute;
-  display: none; }
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 10px 120px;
+  box-sizing: border-box;
+  background-color: #fdf8f8; }
   .modal__success--show {
     display: flex; }
 
@@ -1945,10 +1968,13 @@ button {
     background-color: rgba(20, 21, 23, 0.5);
     transform: rotate3d(0, 0, 1, -90deg); }
 
-.modal__close .modal__close-line:hover,
-.modal__close .modal__close-line::before:hover {
+.modal__close:hover .modal__close-line,
+.modal__close:hover .modal__close-line::before {
   background-color: #fe7865; }
 
 .modal__button {
   width: 176px;
   padding: 18px 10px 17px; }
+  @media (max-width: 767px) {
+    .modal__button {
+      width: 100%; } }
