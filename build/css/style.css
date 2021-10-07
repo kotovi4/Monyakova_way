@@ -560,7 +560,8 @@ button {
 
 .page-header__icon-tel {
   padding-right: 12px;
-  stroke: #141517; }
+  stroke: #141517;
+  fill: none; }
 
 .main-nav {
   margin-left: auto;
@@ -744,6 +745,9 @@ button {
   @media (max-width: 767px) {
     .promo__link {
       padding-right: 10px; } }
+
+.promo__icon {
+  fill: none; }
 
 .location {
   margin: 0 auto;
@@ -1387,7 +1391,8 @@ button {
 
 .price__info-icon {
   margin-right: 17px;
-  stroke: #fe7865; }
+  stroke: #fe7865;
+  fill: none; }
   @media (max-width: 1169px) {
     .price__info-icon {
       display: none; } }
@@ -1813,6 +1818,7 @@ button {
 .contacts__item {
   display: flex;
   align-items: center;
+  padding-bottom: 15px;
   color: #fe7865;
   text-decoration: underline; }
   @media (max-width: 767px) {
@@ -1822,7 +1828,8 @@ button {
 .contacts__icon {
   padding-right: 12px; }
   .contacts__icon--tel {
-    stroke: #d7d9df; }
+    stroke: #d7d9df;
+    fill: none; }
 
 .contacts__email {
   margin: 0;
@@ -1830,7 +1837,6 @@ button {
   line-height: 17px; }
 
 .contacts__tel {
-  margin-top: 23px;
   font-size: 16px;
   line-height: 32px; }
   @media (max-width: 767px) {

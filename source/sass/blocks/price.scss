@@ -116,6 +116,7 @@
 .price__info-icon {
   margin-right: 17px;
   stroke: $accent;
+  fill: none;
 
   @media (max-width: $tablet-max-width) {
     display: none;
