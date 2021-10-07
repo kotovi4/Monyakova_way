@@ -183,7 +183,7 @@ const build = gulp.series(
   clean,
   copy,
   copyStyles,
-  // optimizeImages,
+  optimizeImages,
   gulp.parallel(
     styles,
     html,

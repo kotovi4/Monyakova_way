@@ -25,7 +25,8 @@
     "push-dir": "^0.4.1",
     "sass": "^1.38.0",
     "stylelint": "13.13.1",
-    "stylelint-config-htmlacademy": "0.1.10"
+    "stylelint-config-htmlacademy": "0.1.10",
+    "svgstore": "^3.0.0-2"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
@@ -33,7 +34,8 @@
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp styles",
     "start": "gulp",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "gh-pages": "push-dir --dir=build --branch=gh-pages"
   },
   "browserslist": [
     "last 2 versions",

@@ -23,6 +23,7 @@
 .contacts__item {
   display: flex;
   align-items: center;
+  padding-bottom: 15px;
   color: $accent;
   text-decoration: underline;
 
@@ -36,6 +37,7 @@
 
   &--tel {
     stroke: $gray;
+    fill: none;
   }
 }
 
@@ -46,7 +48,7 @@
 }
 
 .contacts__tel {
-  margin-top: 23px;
+  // margin-top: 23px;
   font-size: 16px;
   line-height: 32px;
 
