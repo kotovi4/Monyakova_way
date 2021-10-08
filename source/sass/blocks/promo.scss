@@ -109,6 +109,14 @@
   width: 260px;
   background-color: $accent;
 
+  &:hover,
+  &:active {
+    background-color: $button-active;
+    transition-timing-function: ease-out;
+    transition-duration: 0.3s;
+    transform: translateY(3px);
+  }
+
   @media (max-width: $tablet-width) {
     justify-content: space-around;
     width: 170px;
@@ -119,11 +127,6 @@
   @media (max-width: $mobile-width) {
     width: 288px;
     padding: 19px 0 17px 0;
-  }
-
-  &:hover,
-  &:active {
-    background-color: $button-active;
   }
 }
 

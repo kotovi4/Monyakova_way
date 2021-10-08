@@ -14,7 +14,12 @@
   cursor: pointer;
   transition-timing-function: ease-out;
   transition-duration: 0.3s;
-  transition-property: background-color, transform;
+
+  &:hover,
+  &:active {
+    background-color: $button-active;
+    transform: translateY(3px);
+  }
 
   @media (max-width: $tablet-width) {
     font-weight: 500;
