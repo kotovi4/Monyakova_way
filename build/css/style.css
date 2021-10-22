@@ -423,7 +423,8 @@ body {
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 16px;
   line-height: 28px;
-  font-weight: 400; }
+  font-weight: 400;
+  margin: 0 auto; }
 
 a {
   text-decoration: none; }
@@ -443,9 +444,6 @@ button {
           clip-path: inset 0%;
   clip: rect(0 0 0 0);
   overflow: hidden; }
-
-.page-body {
-  margin: 0 auto; }
 
 .page-header {
   display: flex;
@@ -713,6 +711,11 @@ button {
   padding: 30px 40px;
   width: 260px;
   background-color: #fe7865; }
+  .promo__button:hover, .promo__button:active {
+    background-color: #f17d4b;
+    transition-timing-function: ease-out;
+    transition-duration: 0.3s;
+    transform: translateY(3px); }
   @media (max-width: 1023px) {
     .promo__button {
       justify-content: space-around;
@@ -723,8 +726,6 @@ button {
     .promo__button {
       width: 288px;
       padding: 19px 0 17px 0; } }
-  .promo__button:hover, .promo__button:active {
-    background-color: #f17d4b; }
 
 .promo__link {
   font-weight: 700;
@@ -1690,8 +1691,10 @@ button {
   border: 0;
   cursor: pointer;
   transition-timing-function: ease-out;
-  transition-duration: 0.3s;
-  transition-property: background-color, transform; }
+  transition-duration: 0.3s; }
+  .button:hover, .button:active {
+    background-color: #f17d4b;
+    transform: translateY(3px); }
   @media (max-width: 1023px) {
     .button {
       font-weight: 500;
