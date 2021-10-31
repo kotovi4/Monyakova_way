@@ -1,13 +1,17 @@
 html {
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  height: 100%;
   font-family: $font-deafult;
   font-size: 16px;
   line-height: 28px;
   font-weight: 400;
-  margin: 0 auto;
 }
 
 a {
@@ -16,4 +20,8 @@ a {
 
 button {
   cursor: pointer;
+}
+
+main {
+  flex-grow: 1;
 }
