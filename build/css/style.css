@@ -420,20 +420,27 @@ template {
   display: none; }
 
 html {
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  height: 100%; }
 
 body {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  height: 100%;
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 16px;
   line-height: 28px;
-  font-weight: 400;
-  margin: 0 auto; }
+  font-weight: 400; }
 
 a {
   text-decoration: none; }
 
 button {
   cursor: pointer; }
+
+main {
+  flex-grow: 1; }
 
 .visually-hidden {
   position: absolute;
