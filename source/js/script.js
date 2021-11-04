@@ -66,12 +66,14 @@ countryIcons.forEach((element, index) => {
 const popupShow = function (evt) {
   if (evt.target.classList.contains("button--buy-now")) {
     modal.classList.add("modal--show");
+    document.body.classList.add("overflow-hidden");
   }
 };
 
 //закрытие модального окна
 const popupClose = function () {
   modal.classList.remove("modal--show");
+  document.querySelector("body").classList.remove("overflow-hidden");
 };
 
 modalClose.addEventListener("click", popupClose);
