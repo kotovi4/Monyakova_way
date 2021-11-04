@@ -1,6 +1,6 @@
 .page-main {
   padding-bottom: 160px;
-  flex-grow: 1;
+  flex: 1 0 auto;
 
   @media (max-width: $tablet-width) {
     padding-bottom: 80px;

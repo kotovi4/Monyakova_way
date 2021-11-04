@@ -424,9 +424,7 @@ html {
   height: 100%; }
 
 body {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
+  margin: 0;
   height: 100%;
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 16px;
@@ -438,9 +436,6 @@ a {
 
 button {
   cursor: pointer; }
-
-main {
-  flex-grow: 1; }
 
 .visually-hidden {
   position: absolute;
@@ -460,7 +455,7 @@ main {
   align-items: center;
   margin: 0 auto;
   padding: 37px 30px 31px 30px;
-  width: 1170px;
+  max-width: 1170px;
   font-size: 18px;
   line-height: 32px;
   color: #141517; }
@@ -618,7 +613,7 @@ main {
 
 .page-main {
   padding-bottom: 160px;
-  flex-grow: 1; }
+  flex: 1 0 auto; }
   @media (max-width: 1023px) {
     .page-main {
       padding-bottom: 80px; } }
@@ -1714,7 +1709,6 @@ main {
 .page-footer {
   display: flex;
   flex-direction: row;
-  flex-grow: 0;
   margin: 0 auto;
   padding: 0 30px 60px;
   text-align: left;

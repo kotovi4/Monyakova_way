@@ -293,7 +293,7 @@
         <form class="callback__form" action="https://echo.htmlacademy.ru" method="post" autocomplete="off">
           <div class="callback__form-wrapper">
             <label class="visually-hidden" for="callback-tel">Телефон</label>
-            <input class="callback__form-input callback__form-input--tel" id="callback-tel" name="tel" type="tel" maxlength="10" placeholder="Введите 10 цифр номера" required>
+            <input class="callback__form-input callback__form-input--tel" id="callback-tel" name="tel" type="tel" maxlength="10" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" placeholder="Введите 10 цифр номера" required>
             <label class="visually-hidden" for="callback-email">Email</label>
             <input class="callback__form-input" id="callback-email" name="email" type="email" autocomplete="email" autocapitalize="off" placeholder="Email">
           </div>
